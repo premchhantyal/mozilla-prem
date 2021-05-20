@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 
-<body>
+<body class="bg">
     <!-- Put HTML Here -->
     <header class="font-metropolis">
         <div class="logo">
@@ -19,16 +19,19 @@
         </div>
         <nav>
             <ul>
-                
-                <li><a><i class="fas fa-th fa-lg"></i></a></li>
+                <li class="active"><a>Home</a></li>
+                <li><a>FAQ</a></li>                    
+                <li class="mobile-menu"><a><i class="fas fa-th fa-lg"></i></a></li>
                 <li><a><i class="fas fa-circle fa-2x"></i></a></li>
             </ul>
         </nav>
-        <ul class="mobile-menu">
-            <li><a>Menu</a></li>
-            <li><a>Home</a></li>
-            <li><a>FAQ</a></li>
-        </ul>
+        <nav class="mobile-menu">
+            <ul>
+                <li id="menu">Menu</li>
+                <li><a>Home</a></li>
+                <li><a>FAQ</a></li>                    
+            </ul>
+        </nav>
     </header>
     <main>
         <div class="container">
@@ -52,7 +55,7 @@
 
                 <div class="card">
                     <div class="detail-summary">
-                        <h3 class="item-email">sw4wo4vs@relay.firefox.com</h3>
+                        <h3 class="item-email">sw4wo4vs@relay.firefox.com <i class="fa fa-files-o" aria-hidden="true"></i></h3>
                         <h2 class="item-block-count">0</h2>
                         <h2 class="item-forward-count">0</h2>
                         <p class="item-detail">Show Details</p>
@@ -71,7 +74,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="font-metropolis">
         <div class="footer-logo">
             <img src="assets/img/logo-mozilla.svg" alt="logo" width="100">
         </div>
